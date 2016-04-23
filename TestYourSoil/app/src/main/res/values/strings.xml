@@ -1,3 +1,52 @@
 <resources>
+    <!-- The name of the app. This text is displayed in the App bar and should be less than 24
+         characters in length. -->
     <string name="app_name">Test Your Soil</string>
+
+    <!-- The first line of text describing the test options available to the user.
+         There is no character limit. -->
+    <string name="select_test_text_description">
+        There are five tests you can do on your soil without expensive tests or equipment.
+    </string>
+    <!-- The second line of text describing how to select the tests to perform on the soil.
+         There is no character limit. -->
+    <string name="select_test_text_selection_description">
+        Select one or more tests to learn more.
+    </string>
+
+    <!-- The test option for visually inspecting the soil. Should be no more than 16 characters. -->
+    <string name="look_option_text">Look at it</string>
+    <!-- The test option for physically inspecting the soil. No more than 16 characters. -->
+    <string name="feel_option_text">Feel it</string>
+    <!-- The test option for separating the soil components in a jar of water.
+         No more than 16 characters. -->
+    <string name="separate_option_text">Separate it</string>
+    <!-- The test option for digging a hole to identify soil strata. No more than 16 characters. -->
+    <string name="dig_option_text">Dig it</string>
+    <!-- The test option for a water infiltration test. No more than 16 characters. -->
+    <string name="flood_option_text">Flood it</string>
+
+    <!-- The text for the select button. Should be no more than 16 characters. -->
+    <string name="select_button_text">Select</string>
+
+    <!-- The text describing how to perform the visual inspection test. No character limit. -->
+    <string name="look_test_instructions">
+        Look test selected.
+    </string>
+    <!-- The text describing how to perform the physical inspection test. No character limit. -->
+    <string name="feel_test_instructions">
+        Feel test selected.
+    </string>
+    <!-- The text describing how to perform the component separation test. No character limit. -->
+    <string name="separate_test_instructions">
+        Separate test selected.
+    </string>
+    <!-- The text describing how to perform the soil strata test. No character limit. -->
+    <string name="dig_test_instructions">
+        Dig test selected.
+    </string>
+    <!-- The text describing how to perform the infiltration test. No character limit. -->
+    <string name="flood_test_instructions">
+        Flood test selected.
+    </string>
 </resources>

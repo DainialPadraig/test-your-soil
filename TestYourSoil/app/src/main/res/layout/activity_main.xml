@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,103 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.udacity.project.testyoursoil.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="@string/select_test_text_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_test_text_selection_description"/>
+
+    <CheckBox
+        android:id="@+id/look_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/look_option_text" />
+
+    <CheckBox
+        android:id="@+id/feel_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feel_option_text" />
+
+    <CheckBox
+        android:id="@+id/separate_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separate_option_text" />
+
+    <CheckBox
+        android:id="@+id/dig_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dig_option_text" />
+
+    <CheckBox
+        android:id="@+id/flood_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flood_option_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_button_text"
+        android:onClick="selectOptions" />
+
+    <ImageView
+        android:id="@+id/look_option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/look_option_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/feel_option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/feel_option_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/separate_option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/separate_option_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/dig_option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dig_option_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/flood_option_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/flood_option_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
