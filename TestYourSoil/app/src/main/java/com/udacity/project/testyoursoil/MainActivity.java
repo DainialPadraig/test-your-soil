@@ -4,9 +4,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String LOG_TAG = "MainActivity: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +23,53 @@ public class MainActivity extends AppCompatActivity {
      * @param view the calling view
      */
     public void selectOptions(View view) {
-        boolean lookOptionSelected = findViewById(R.id.look_option).isSelected();
-        boolean feelOptionSelected = findViewById(R.id.feel_option).isSelected();
-        boolean separateOptionSelected = findViewById(R.id.separate_option).isSelected();
-        boolean digOptionSelected = findViewById(R.id.dig_option).isSelected();
-        boolean floodOptionSelected = findViewById(R.id.flood_option).isSelected();
 
+        // Variables to maintain the state of the option checkboxes.
+        boolean lookOptionSelected;
+        boolean feelOptionSelected;
+        boolean separateOptionSelected;
+        boolean digOptionSelected;
+        boolean floodOptionSelected;
+
+        // Get state of option checkboxes and set variables. Also ensure that the checkboxes are
+        // defined to prevent null pointer exception.
+        CheckBox lookCheckBox = (CheckBox) findViewById(R.id.look_option);
+        if (lookCheckBox != null) {
+            lookOptionSelected = lookCheckBox.isChecked();
+        } else {
+            lookOptionSelected = false;
+            Log.println(Log.ERROR, LOG_TAG, "lookCheckBox not defined");
+        }
+        CheckBox feelCheckBox = (CheckBox) findViewById(R.id.feel_option);
+        if (feelCheckBox != null) {
+            feelOptionSelected = feelCheckBox.isChecked();
+        } else {
+            feelOptionSelected = false;
+            Log.println(Log.ERROR, LOG_TAG, "feelCheckBox not defined");
+        }
+        CheckBox separateCheckBox = (CheckBox) findViewById(R.id.separate_option);
+        if (separateCheckBox != null) {
+            separateOptionSelected = separateCheckBox.isChecked();
+        } else {
+            separateOptionSelected = false;
+            Log.println(Log.ERROR, LOG_TAG, "separateCheckBox not defined");
+        }
+        CheckBox digCheckBox = (CheckBox) findViewById(R.id.dig_option);
+        if (digCheckBox != null) {
+            digOptionSelected = digCheckBox.isChecked();
+        } else {
+            digOptionSelected = false;
+            Log.println(Log.ERROR, LOG_TAG, "digCheckBox not defined");
+        }
+        CheckBox floodCheckBox = (CheckBox) findViewById(R.id.flood_option);
+        if (floodCheckBox != null) {
+            floodOptionSelected = floodCheckBox.isChecked();
+        } else {
+            floodOptionSelected = false;
+            Log.println(Log.ERROR, LOG_TAG, "floodCheckBox not defined");
+        }
+
+        // Display the images and text associated with the selected options.
         displayOptions(lookOptionSelected, feelOptionSelected, separateOptionSelected,
                        digOptionSelected, floodOptionSelected);
     }
@@ -40,62 +85,116 @@ public class MainActivity extends AppCompatActivity {
     private void displayOptions(boolean lookOpt, boolean feelOpt, boolean separateOpt,
                                 boolean digOpt, boolean floodOpt) {
 
-        // If the option booleans are true, display the associated image and text.
-        if (!lookOpt) {
-            Log.println(Log.VERBOSE, "MainActivity", "displayLookOption()");
-            displayLookOption();
-        }
-        if (feelOpt) {
-            displayFeelOption();
-        }
-        if (separateOpt) {
-            displaySeparateOption();
-        }
-        if (digOpt) {
-            displayDigOption();
-        }
-        if (floodOpt) {
-            displayFloodOption();
-        }
+        // Call the individual display methods.
+        displayLookTest(lookOpt);
+        displayFeelTest(feelOpt);
+        displaySeparateTest(separateOpt);
+        displayDigTest(digOpt);
+        displayFloodTest(floodOpt);
     }
 
     /**
      * Display the look test image and text.
+     * @param lookOpt is true if the look test option has been selected
      */
-    private void displayLookOption() {
+    private void displayLookTest(boolean lookOpt) {
+
+        // Get references to the views for the look test option.
+        ImageView lookOptImageView = (ImageView) findViewById(R.id.look_option_image);
         TextView lookOptTextView = (TextView) findViewById(R.id.look_option_instructions);
-        lookOptTextView.setText(R.string.look_test_instructions);
+
+        // If the look test option has been selected, display the instructions,
+        if (lookOpt) {
+            lookOptTextView.setText(R.string.look_test_instructions);
+            lookOptImageView.setVisibility(View.GONE);
+            lookOptTextView.setVisibility(View.VISIBLE);
+        } else {  // otherwise, clear the views.
+            lookOptImageView.setVisibility(View.GONE);
+            lookOptTextView.setVisibility(View.GONE);
+        }
     }
 
     /**
      * Display the feel test image and text.
+     * @param feelOpt is true if the feel test option has been selected
      */
-    private void displayFeelOption() {
+    private void displayFeelTest(boolean feelOpt) {
+
+        // Get references to the views for the feel test option.
+        ImageView feelOptImageView = (ImageView) findViewById(R.id.look_option_image);
         TextView feelOptTextView = (TextView) findViewById(R.id.feel_option_instructions);
-        feelOptTextView.setText(R.string.feel_test_instructions);
+
+        // If the feel test option has been selected, display the instructions,
+        if (feelOpt) {
+            feelOptTextView.setText(R.string.feel_test_instructions);
+            feelOptImageView.setVisibility(View.GONE);
+            feelOptTextView.setVisibility(View.VISIBLE);
+        } else {   // otherwise, clear the views.
+            feelOptImageView.setVisibility(View.GONE);
+            feelOptTextView.setVisibility(View.GONE);
+        }
     }
 
     /**
      * Display the separate test image and text.
+     * @param separateOpt is true if the separate test option has been selected
      */
-    private void displaySeparateOption() {
+    private void displaySeparateTest(boolean separateOpt) {
+
+        // Get references to the views for the separate test option.
+        ImageView sepOptImageView = (ImageView) findViewById(R.id.separate_option_image);
         TextView sepOptTextView = (TextView) findViewById(R.id.separate_option_instructions);
-        sepOptTextView.setText(R.string.separate_test_instructions);
+
+        // If the separate test option has been selected, display the instructions,
+        if (separateOpt) {
+            sepOptTextView.setText(R.string.separate_test_instructions);
+            sepOptImageView.setVisibility(View.GONE);
+            sepOptTextView.setVisibility(View.VISIBLE);
+        } else {  // otherwise, clear the views.
+            sepOptImageView.setVisibility(View.GONE);
+            sepOptTextView.setVisibility(View.GONE);
+        }
     }
 
     /**
      * Display the dig test image and text.
+     * @param digOpt is true if the dig test option has been selected
      */
-    private void displayDigOption() {
+    private void displayDigTest(boolean digOpt) {
+
+        // Get references to the views for the dig test option.
+        ImageView digOptImageView = (ImageView) findViewById(R.id.dig_option_image);
         TextView digOptTextView = (TextView) findViewById(R.id.dig_option_instructions);
-        digOptTextView.setText(R.string.dig_test_instructions);
+
+        // If the dig test option has been selected, display the instructions,
+        if (digOpt) {
+            digOptTextView.setText(R.string.dig_test_instructions);
+            digOptImageView.setVisibility(View.GONE);
+            digOptTextView.setVisibility(View.VISIBLE);
+        } else {   // otherwise, clear the views.
+            digOptImageView.setVisibility(View.GONE);
+            digOptTextView.setVisibility(View.GONE);
+        }
     }
 
     /**
      * Display the flood test image and text.
+     * @param floodOpt is true if the flood test option has been selected
      */
-    private void displayFloodOption() {
+    private void displayFloodTest(boolean floodOpt) {
+
+        // Get references to the views for the flood test option.
+        ImageView floodOptImageView = (ImageView) findViewById(R.id.flood_option_image);
         TextView floodOptTextView = (TextView) findViewById(R.id.flood_option_instructions);
-        floodOptTextView.setText(R.string.flood_test_instructions);
+
+        // If the flood test option has been selected, display the instructions,
+        if (floodOpt) {
+            floodOptTextView.setText(R.string.flood_test_instructions);
+            floodOptImageView.setVisibility(View.GONE);
+            floodOptTextView.setVisibility(View.VISIBLE);
+        } else {   // otherwise, clear the views.
+            floodOptImageView.setVisibility(View.GONE);
+            floodOptTextView.setVisibility(View.GONE);
+        }
     }
 }
