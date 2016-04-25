@@ -105,8 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
         // If the look test option has been selected, display the instructions,
         if (lookOpt) {
-            lookOptTextView.setText(R.string.look_test_instructions);
-            lookOptImageView.setVisibility(View.GONE);
+            lookOptImageView.setVisibility(View.VISIBLE);
             lookOptTextView.setVisibility(View.VISIBLE);
         } else {  // otherwise, clear the views.
             lookOptImageView.setVisibility(View.GONE);
@@ -126,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
 
         // If the feel test option has been selected, display the instructions,
         if (feelOpt) {
-            feelOptTextView.setText(R.string.feel_test_instructions);
             feelOptImageView.setVisibility(View.GONE);
             feelOptTextView.setVisibility(View.VISIBLE);
         } else {   // otherwise, clear the views.
@@ -147,7 +145,6 @@ public class MainActivity extends AppCompatActivity {
 
         // If the separate test option has been selected, display the instructions,
         if (separateOpt) {
-            sepOptTextView.setText(R.string.separate_test_instructions);
             sepOptImageView.setVisibility(View.GONE);
             sepOptTextView.setVisibility(View.VISIBLE);
         } else {  // otherwise, clear the views.
@@ -168,7 +165,6 @@ public class MainActivity extends AppCompatActivity {
 
         // If the dig test option has been selected, display the instructions,
         if (digOpt) {
-            digOptTextView.setText(R.string.dig_test_instructions);
             digOptImageView.setVisibility(View.GONE);
             digOptTextView.setVisibility(View.VISIBLE);
         } else {   // otherwise, clear the views.
@@ -189,7 +185,6 @@ public class MainActivity extends AppCompatActivity {
 
         // If the flood test option has been selected, display the instructions,
         if (floodOpt) {
-            floodOptTextView.setText(R.string.flood_test_instructions);
             floodOptImageView.setVisibility(View.GONE);
             floodOptTextView.setVisibility(View.VISIBLE);
         } else {   // otherwise, clear the views.
