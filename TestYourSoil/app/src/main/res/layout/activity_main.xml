@@ -72,14 +72,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:src="@drawable/soil_appearance" />
+                android:src="@drawable/soil_appearance"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/look_option_instructions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/look_test_instructions" />
+                android:text="@string/look_test_instructions"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -93,14 +95,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/feel_option_instructions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/feel_test_instructions" />
+                android:text="@string/feel_test_instructions"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -114,14 +118,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/separate_option_instructions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/separate_test_instructions" />
+                android:text="@string/separate_test_instructions"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -135,14 +141,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/dig_option_instructions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/dig_test_instructions" />
+                android:text="@string/dig_test_instructions"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -156,17 +164,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/flood_option_instructions"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="@string/flood_test_instructions" />
+                android:text="@string/flood_test_instructions"
+                android:visibility="gone" />
 
         </LinearLayout>
 
     </LinearLayout>
-    
+
 </ScrollView>

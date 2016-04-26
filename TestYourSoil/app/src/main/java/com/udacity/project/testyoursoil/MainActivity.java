@@ -102,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
         // Get references to the views for the look test option.
         ImageView lookOptImageView = (ImageView) findViewById(R.id.look_option_image);
         TextView lookOptTextView = (TextView) findViewById(R.id.look_option_instructions);
-
         // If the look test option has been selected, display the instructions,
         if (lookOpt) {
             lookOptImageView.setVisibility(View.VISIBLE);
@@ -120,12 +119,12 @@ public class MainActivity extends AppCompatActivity {
     private void displayFeelTest(boolean feelOpt) {
 
         // Get references to the views for the feel test option.
-        ImageView feelOptImageView = (ImageView) findViewById(R.id.look_option_image);
+        ImageView feelOptImageView = (ImageView) findViewById(R.id.feel_option_image);
         TextView feelOptTextView = (TextView) findViewById(R.id.feel_option_instructions);
 
         // If the feel test option has been selected, display the instructions,
         if (feelOpt) {
-            feelOptImageView.setVisibility(View.GONE);
+            feelOptImageView.setVisibility(View.VISIBLE);
             feelOptTextView.setVisibility(View.VISIBLE);
         } else {   // otherwise, clear the views.
             feelOptImageView.setVisibility(View.GONE);
