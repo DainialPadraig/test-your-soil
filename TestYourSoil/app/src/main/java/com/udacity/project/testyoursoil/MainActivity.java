@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
         // If the separate test option has been selected, display the instructions,
         if (separateOpt) {
-            sepOptImageView.setVisibility(View.GONE);
+            sepOptImageView.setVisibility(View.VISIBLE);
             sepOptTextView.setVisibility(View.VISIBLE);
         } else {  // otherwise, clear the views.
             sepOptImageView.setVisibility(View.GONE);
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
 
         // If the dig test option has been selected, display the instructions,
         if (digOpt) {
-            digOptImageView.setVisibility(View.GONE);
+            digOptImageView.setVisibility(View.VISIBLE);
             digOptTextView.setVisibility(View.VISIBLE);
         } else {   // otherwise, clear the views.
             digOptImageView.setVisibility(View.GONE);
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
 
         // If the flood test option has been selected, display the instructions,
         if (floodOpt) {
-            floodOptImageView.setVisibility(View.GONE);
+            floodOptImageView.setVisibility(View.VISIBLE);
             floodOptTextView.setVisibility(View.VISIBLE);
         } else {   // otherwise, clear the views.
             floodOptImageView.setVisibility(View.GONE);

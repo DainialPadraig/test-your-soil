@@ -45,7 +45,7 @@
     <string name="dig_test_instructions">
         Dig test selected.
     </string>
-    <!-- The text describing how to perform the infiltration test. No character limit. -->
+    <!-- The text describing how to perform the soil infiltration test. No character limit. -->
     <string name="flood_test_instructions">
         Flood test selected.
     </string>

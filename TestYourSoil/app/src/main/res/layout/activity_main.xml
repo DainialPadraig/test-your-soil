@@ -96,6 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:src="@drawable/soil_feel"
                 android:visibility="gone" />
 
             <TextView
@@ -110,7 +111,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageView
@@ -119,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:src="@drawable/soil_separation"
                 android:visibility="gone" />
 
             <TextView
@@ -142,6 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:src="@drawable/soil_strata"
                 android:visibility="gone" />
 
             <TextView
@@ -165,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:src="@drawable/soil_infiltration"
                 android:visibility="gone" />
 
             <TextView
