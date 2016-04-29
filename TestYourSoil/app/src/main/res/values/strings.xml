@@ -6,7 +6,7 @@
     <!-- The first line of text describing the test options available to the user.
          There is no character limit. -->
     <string name="select_test_text_description">
-        There are five tests you can do on your soil without expensive tests or equipment.
+        Five tests you can do on your soil without expensive tests or equipment.
     </string>
     <!-- The second line of text describing how to select the tests to perform on the soil.
          There is no character limit. -->
@@ -31,22 +31,42 @@
 
     <!-- The text describing how to perform the visual inspection test. No character limit. -->
     <string name="look_test_instructions">
-        Look test selected.
+        Look at a sample of your soil. Is it light colored or dark? Is it fine grained? Coarse?
+        Does it clump or is it loose? Is it gravelly or rocky? Is there organic material visible in
+        it? The appearance of your soil will tell you a lot about its health. Good soil is alive.
     </string>
     <!-- The text describing how to perform the physical inspection test. No character limit. -->
     <string name="feel_test_instructions">
-        Feel test selected.
+        Add enough water to a handful of soil to be able to form it into a ball and knead it enough
+        that you can squeeze it without it falling apart. If you can\'t do this, your soil likely
+        has a high sand content. If you are able to form a ball, squeeze it between your finger and
+        thumb to form a ribbon. The longer you can make the ribbon without it breaking, the higher
+        the clay content in your soil.
     </string>
     <!-- The text describing how to perform the component separation test. No character limit. -->
     <string name="separate_test_instructions">
-        Separate test selected.
+        Fill a glass or plastic jar that has a tight-fitting lid about halfway up with a sample of
+        your soil. Fill it most of the rest of the way up with water…and a little bit of dish soap
+        to ensure the soil will separate. Put the lid on tight and shake the jar vigorously. Allow
+        soil to settle. The sample should form layers, with the heavier components (like gravel and
+        clay) settling to the bottom and lighter soils (like sand at the top). The highest level and
+        particles floating in suspension will be the organic materials.
     </string>
     <!-- The text describing how to perform the soil strata test. No character limit. -->
     <string name="dig_test_instructions">
-        Dig test selected.
+        Dig a hole about a foot deep. Inspect the layers you have uncovered. Ideally, you will have
+        an organic layer at the top with some uncompacted loam below it and more compacted loam
+        layer below that. But, you more likely will have some clay, perhaps some mineral layers
+        (like caliche), and gravel or sand in your layers. Hopefully, you will also see some signs
+        of life in your soil, like worms! This test will give you an idea how deeply you need to
+        work your soil and how much you need to remediate it with organic materials.
     </string>
     <!-- The text describing how to perform the soil infiltration test. No character limit. -->
     <string name="flood_test_instructions">
-        Flood test selected.
+        Dig a hole about a foot deep. Fill it up with water. Wait for the water to absorb (usually
+        about a day). Now fill the hole about halfway up with water and put a ruler in the hole.
+        Measure how much the water level drops over a period that will allow you to caclulate the
+        rate of water infiltration, say 10 minutes or 30 minutes. If the water level takes a long
+        time to drop, you likely have a very high clay content or a hard mineral layer in your soil.
     </string>
 </resources>
