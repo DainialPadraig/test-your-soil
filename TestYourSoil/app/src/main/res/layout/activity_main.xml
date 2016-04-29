@@ -18,12 +18,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/select_test_text_description" />
+            android:text="@string/select_test_text_description"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/select_test_text_selection_description"/>
+            android:text="@string/select_test_text_selection_description"
+            android:textSize="14sp"
+            android:textStyle="italic"/>
 
         <CheckBox
             android:id="@+id/look_option"
